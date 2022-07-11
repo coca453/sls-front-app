@@ -1,12 +1,12 @@
 version: 0.2
 
-phases: 
+phases:
   pre_build:
     commands:
       - echo Deployment started on `date`
       - echo Syncing S3 Content
       # REPLACE yourwebsite.com WITH THE NAME OF YOUR S3 BUCKET THAT HOSTS YOUR APP'S STATIC WEBSITE
-      - aws s3 sync ./public/ s3://yourwebsite.com
+      - aws s3 sync ./public/ s3://154do58q5d.execute-api.us-east-2.amazonaws.com
   build:
     commands:
       - echo Invalidating CloudFront Cache
