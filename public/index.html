@@ -17,13 +17,11 @@
     ></script>
     <link rel="stylesheet" href="styles/style.css" />
     <!-- Insert your Web Application Client ID from Google API Console below-->
-    <script src="https://accounts.google.com/gsi/client" async defer></script>
-    <div
-      id="g_id_onload"
-      data-client_id="358898489156-sm6465ljf28322i145kklkc1embtm930.apps.googleusercontent.com"
-      data-callback="handleCredentialResponse"
-    ></div>
-    <div class="g_id_signin" data-type="standard"></div>
+    <meta
+      name="google-signin-client_id"
+      content="358898489156-sm6465ljf28322i145kklkc1embtm930.apps.googleusercontent.com"
+    />
+    <script src="https://apis.google.com/js/platform.js"></script>
   </head>
 
   <body>
